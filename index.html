@@ -12,24 +12,54 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./assets/css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Advice generator app</title>
   </head>
-  <body>
-    <main id="wrapper">
+  <body class="bg-darkBlue">
+    <main
+      id="wrapper"
+      class="bg-darkGrayishBlue mt-20 mx-auto w-11/12 max-w-[400px] p-5 rounded-lg"
+    >
       <div class="container">
         <div class="advice">
-          <h1 class="advice--title">
+          <h1
+            class="advice--title text-neonGreen text-xs uppercase tracking-[.25em] text-center my-5"
+          >
             Advice <span class="advice--id">#</span>
           </h1>
-          <p class="advice--text"></p>
+          <p
+            class="advice--text text-center text-lightCyan font-extrabold mb-4"
+          >
+            "Never write in an email to someone, something which you wouldn't
+            say to that person's face."
+          </p>
         </div>
-        <div class="divider"></div>
-        <div class="dice"></div>
+        <div class="divider">
+          <img
+            src="./images/pattern-divider-mobile.svg"
+            alt="a parallel line didvided by two vertical line"
+            class="justify-center"
+          />
+          <!-- <img
+            src="./images/pattern-divider-desktop.svg"
+            alt="a parallel line didvided by two vertical line"
+          /> -->
+        </div>
+        <div
+          class="dice bg-neonGreen p-3 rounded-full w-10 justify-center mx-auto relative top-10"
+        >
+          <img src="./images/icon-dice.svg" alt="image of a dice" />
+        </div>
       </div>
     </main>
 
-    <div class="attribution text-xs text-center">
+    <div class="attribution text-xs text-center mt-20">
       Challenge by
       <a
         href="https://www.frontendmentor.io?ref=challenge"
