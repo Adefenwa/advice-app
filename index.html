@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <script defer type="module" src="./assets/js/app.js"></script>
 
     <title>Frontend Mentor | Advice generator app</title>
   </head>
@@ -31,28 +32,29 @@
           <h1
             class="advice--title text-neonGreen text-xs uppercase tracking-[.25em] text-center my-5"
           >
-            Advice <span class="advice--id">#</span>
+            Advice <span class="advice--id">#117</span>
           </h1>
           <p
             class="advice--text text-center text-lightCyan font-extrabold mb-4"
           >
-            "Never write in an email to someone, something which you wouldn't
-            say to that person's face."
+            "It is easy to sit up and take notice, what's difficult is getting
+            up and take action"
           </p>
         </div>
         <div class="divider">
           <img
             src="./images/pattern-divider-mobile.svg"
             alt="a parallel line didvided by two vertical line"
-            class="justify-center"
+            class="justify-center min-[360px]:hidden"
           />
-          <!-- <img
+          <img
             src="./images/pattern-divider-desktop.svg"
             alt="a parallel line didvided by two vertical line"
-          /> -->
+            class="hidden min-[360px]:block"
+          />
         </div>
         <div
-          class="dice bg-neonGreen p-3 rounded-full w-10 justify-center mx-auto relative top-10"
+          class="dice bg-neonGreen p-3 rounded-full w-10 justify-center mx-auto relative top-10 cursor-pointer active:shadow-[0_0_15px_15px_rgba(82,255,168,0.3)] transition-shadow duration-300 hover:shadow-[0_0_15px_15px_rgba(82,255,168,0.3)] transition-shadow duration-300"
         >
           <img src="./images/icon-dice.svg" alt="image of a dice" />
         </div>
@@ -66,7 +68,7 @@
         class="text-blue"
         target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Sotunde Emmanuel Adefenwa</a>.
     </div>
   </body>
 </html>
